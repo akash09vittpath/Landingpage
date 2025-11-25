@@ -9,67 +9,88 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- header -->
     <header>
-        <div class="header-contact-details container-fluid bg-danger p-3 p-sm-4 p-md-0">
-            <div class="container mx-auto row align-items-center">
-                <div class="social-media-icons col-sm-12 col-md-6 col-lg-6 col-12 text-sm-center text-md-start">
-                    <i class="bi bi-facebook mx-2 p-2 rounded-circle text-black bg-light"></i>
-                    <i class="bi bi-pinterest mx-2 p-2 rounded-circle bg-light"></i>
-                    <i class="bi bi-youtube mx-2 p-2 rounded-circle bg-light"></i>
-                    <i class="bi bi-twitter-x mx-2 p-2 rounded-circle bg-light"></i>
+        <div class="header-contact-details container-fluid bg-danger d-flex align-items-center py-1 d-none d-md-block">
+            <div class="container mx-auto d-flex justify-content-between align-items-center">
+                <div class="social-media-icons d-flex text-sm-center text-md-start mt-sm-2 mt-md-0 mt-lg-0 mt-3 gap-2">
+                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
+                        style="width: 30px; height: 30px;">
+                        <i class="bi bi-facebook text-black "></i>
+                    </div>
+                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
+                        style="width: 30px; height: 30px;">
+                        <i class="bi bi-pinterest"></i>
+                    </div>
+                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
+                        style="width: 30px; height: 30px;">
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                    <div class="rounded-circle bg-light d-flex align-items-center justify-content-center"
+                        style="width: 30px; height: 30px;">
+                        <i class="bi bi-twitter-x"></i>
+                    </div>
                 </div>
 
-                <div class="location-and-email d-flex col-sm-12 col-md-6 col-lg-6 col-12 text-white mt-3 mt-sm-4">
+                <div class="location-and-email d-flex text-white mt-1 ">
                     <div class="location d-flex gap-1">
                         <i class="bi bi-geo-alt-fill"></i>
-                        <p class="fs-6 fs-sm-5 fs-md-4 fs-lg-3 fs-xl-2 fs-xxl-1">D-26 Sector-59, Noida, Uttar Pradesh
-                        </p>
+                        <p class="display-sm-1 display-md-2 display-lg-3">D-26, Sector 59, Noida, Uttar Pradesh</p>
                     </div>
                     <div class="mail d-flex ms-5 gap-1">
                         <i class="bi bi-envelope-fill"></i>
-                        <p class="fs-6 fs-sm-5 fs-md-4 fs-lg-3 fs-xl-2 fs-xxl-1">vittyaan@gmail.com</p>
+                        <p class="display-sm-1 display-md-2 display-lg-3">vittyaan@gmail.com</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary px-3 px-sm-3 px-md-0 px-lg-0 fw-medium">
+        <nav class="navbar navbar-expand-lg bg-body-white px-3 px-sm-3 px-md-0 px-lg-0 fw-medium">
             <div class="container">
-                <a class="navbar-brand" href="#">LOGO</a>
+                <div style="width: 150px;">
+                    <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" style="width: 65px; height: 60px;" />
+                    </a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto gap-3">
+                    <ul class="navbar-nav me-auto mx-sm-auto mb-2 mb-lg-0 ms-auto gap-3 text-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#service">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Industries</a>
+                            <a class="nav-link" href="#products">Industries</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="#blogs">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
-                <div class="get-quote d-none d-md-block">
-                    GET A QUOTE
+                <div class="get-quote gap-2 align-items-center d-none d-md-flex ">
+                    <div class="bg-danger d-flex align-items-center justify-content-center p-3"
+                        style="width: 20px; height: 20px;">
+                        <i class="bi bi-stopwatch text-white"></i>
+                    </div>
+                    <p class="mt-3">GET A QUOTE </p>
+                    <i class="bi bi-caret-right fs-4"></i>
                 </div>
             </div>
         </nav>
@@ -85,15 +106,17 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active position-relative">
-                    <img src="./images/img-3.jpeg" class="w-100 img-fluid" alt="...">
+                    <img src="./images/hero-img.png" class="w-100 img-fluid" alt="...">
                     <div
                         class="position-absolute top-0 top-md-50 start-0 ms-2 ms-md-5 mt-5 p-2 p-md-5 text-white text-center text-md-start w-100 w-md-50">
-                        <h5 class="fs-3 fs-sm-1 fs-md-1">One Name Industries Trust - Bombay Tools Centre.
+                        <h5 class="hero-img-text">One Name Industries Trust - Bombay Tools Centre.
                             30 Years of Precision.</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facere voluptate rem ipsa
+                        <p class="hero-img-subtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
+                            facere voluptate rem ipsa
                             excepturi saepe natus dignissimos consequatur aliquid voluptatum dolore autem eveniet
                             repellat.</p>
-                        <button type="button" class="btn btn-danger rounded-0">Get Quote</button>
+                        <button type="button" class="btn btn-danger rounded-0 b">Get Quote <i
+                                class="bi bi-caret-right-fill"></i></button>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -127,18 +150,18 @@
     </header>
 
     <!-- about us -->
-    <section class="about container-fluid">
+    <section id="about" class="about container-fluid" data-aos="fade-up">
         <div class="container">
             <div class="about-us-container row">
                 <div class="left-div-img col-sm-12 col-md-6 col-lg-6 col-12 p-5">
-                    <img class="img-fluid" src="./images/img-2.jpeg" />
+                    <img class="img-fluid zoom-img" src="./images/about-img.jpg"/>
                 </div>
                 <div class="right-div-content col-sm-12 col-md-6 col-lg-6 col-12 p-5">
                     <div class="about-us-content">
-                        <p>ABOUT US</p>
-                        <hr />
-                        <h1>A Company of</h1>
-                        <h1>Excellent Services</h1>
+                        <p class="fs-6">ABOUT US</p>
+                        <hr class="text-danger" style="width: 75px;" />
+                        <h2>A Company of</h2>
+                        <h2>Excellent Services</h2>
                         <p>Bombay Tools Centre is the place where we find tools and industrial solutions that make work
                             easy.</p>
                         <p>Our Organisation was established in 1993 in Mumbai, and we have over 30 years of experience
@@ -149,15 +172,10 @@
                             ethical business, and consistent quality.</p>
                         <p>Bombay Tools Centre is one of India’s most trusted names in cutting tools, CNC/VMC tooling
                             systems, and precision instruments.</p>
-                        <p>Bombay Tools Centre offers a wide variety of cutting tools designed to meet the requir ements
-                            of
-                            industries such as manufacturing, oil & gas, automotive, engineering, and more.</p>
-                        <p>We provide quality tools that help you work smarter, faster, and safer.</p>
                         <hr />
                         <button type="button" class="btn btn-danger rounded-0 p-2">
                             VIEW MORE
-                            <i
-                                class="bi bi-chevron-right ps-1 text-secondary bg-light rounded-circle text-center ms-1"></i>
+                            <i class="bi bi-caret-right-fill"></i>
                         </button>
                     </div>
                 </div>
@@ -166,32 +184,47 @@
     </section>
 
     <!-- Services -->
-    <section class="services container-fluid py-4 bg-body-tertiary">
+    <section id="#service" class="services container-fluid py-4 bg-body-tertiary">
         <div class="container px-2 px-md-5">
             <p class="text-center">Services</p>
-            <hr class="w-25 mx-auto text-danger" />
-            <p class="fs-1 fw-medium text-center">Our Expertise & Services</p>
+            <hr class="mx-auto text-danger" style="width: 75px;" />
+            <p class="fs-2 fw-medium text-center">Our Expertise & Services</p>
             <div class="row w-75 mx-auto gap-3 gap-md-0">
                 <div class="service col-sm-12 col-md-4 col-lg-4 col-12 border d-flex flex-column">
-                    <img class="img-fluid rounded-circle border border-secondary p-2 mb-4" src="./images/img-1.jpeg" />
-                    <h4>CNC & Tooling Solutions</h4>
-                    <p>Our nation is at war our economy in turmoil and the promise.</p>
-                    <i class="bi bi-chevron-right ps-1 text-secondary bg-light rounded-circle text-center ms-1"></i>
-                    <p class="fw-medium">More Details</p>
+                    <img class="img-fluid zoom-img rounded-circle border border-secondary p-2 mb-4"
+                        src="./images/service-1.png" />
+                    <h6>CNC & Tooling Solutions</h6>
+                    <p style="font-size: 14px;">Our nation is at war our economy in turmoil and the promise.</p>
+                    <div class="d-flex gap-2">
+                        <div class="rounded-circle border border-danger" style="width: 25px; height: 25px;">
+                            <i class="bi bi-chevron-right ps-1 text-danger bg-light rounded-circle text-center"></i>
+                        </div>
+                        <p class="fw-medium">More Details</p>
+                    </div>
                 </div>
                 <div class="service col-sm-12 col-md-4 col-lg-4 col-12 border d-flex flex-column">
-                    <img class="img-fluid rounded-circle border border-secondary p-2 mb-4" src="./images/img-1.jpeg" />
-                    <h4>CNC & Tooling Solutions</h4>
-                    <p>Our nation is at war our economy in turmoil and the promise.</p>
-                    <i class="bi bi-chevron-right ps-1 text-secondary bg-light rounded-circle text-center ms-1"></i>
-                    <p class="fw-medium">More Details</p>
+                    <img class="img-fluid zoom-img rounded-circle border border-secondary p-2 mb-4"
+                        src="./images/service-2.png" />
+                    <h6>HSS and Carbide Cutting Tools</h6>
+                    <p style="font-size: 14px;">Our nation is at war our economy in turmoil and the promise.</p>
+                    <div class="d-flex gap-2">
+                        <div class="rounded-circle border border-danger" style="width: 25px; height: 25px;">
+                            <i class="bi bi-chevron-right ps-1 text-danger bg-light rounded-circle text-center"></i>
+                        </div>
+                        <p class="fw-medium">More Details</p>
+                    </div>
                 </div>
                 <div class="service col-sm-12 col-md-4 col-lg-4 col-12 border d-flex flex-column">
-                    <img class="img-fluid rounded-circle border border-secondary p-2 mb-4" src="./images/img-1.jpeg" />
-                    <h4>CNC & Tooling Solutions</h4>
-                    <p>Our nation is at war our economy in turmoil and the promise.</p>
-                    <i class="bi bi-chevron-right ps-1 text-secondary bg-light rounded-circle text-center ms-1"></i>
-                    <p class="fw-medium">More Details</p>
+                    <img class="img-fluid zoom-img rounded-circle border border-secondary p-2 mb-4"
+                        src="./images/service-3.png" />
+                    <h6>Indexable Inserts and Boring</h6>
+                    <p style="font-size: 14px;">Our nation is at war our economy in turmoil and the promise.</p>
+                    <div class="d-flex gap-2">
+                        <div class="rounded-circle border border-danger" style="width: 25px; height: 25px;">
+                            <i class="bi bi-chevron-right ps-1 text-danger bg-light rounded-circle text-center"></i>
+                        </div>
+                        <p class="fw-medium">More Details</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -227,98 +260,136 @@
     </section>
 
     <!-- products -->
-    <section class="products">
+    <section id="products" class="products py-5">
         <div class="container">
-            <h1 class="text-center fw-bold py-4">Products</h1>
-            <div class="row gap-3 gap-md-0">
+            <h1 class="text-center fw-bold pb-4">Products</h1>
 
-                <div class="col-sm-12 col-md-4 col-lg-4 col-12 position-relative">
-                    <img src="./images/img-2.jpeg" class="img-fluid" />
+            <div class="row g-4">
+                <div class="col-12 col-md-4 position-relative">
+                    <div class="ratio ratio-4x3">
+                        <img src="./images/product-1.jpg" class="w-100 zoom-img h-100 object-fit-cover">
+                    </div>
 
-                    <div class="position-absolute bottom-0 start-0 w-50 px-5 py-4">
+                    <div class="position-absolute bottom-0 start-0 p-4">
                         <h4 class="text-white m-0">Turning</h4>
-                        <button class="btn btn-light btn-sm mt-2 px-3 py-2 rounded-0">More info</button>
+                        <button class="btn btn-sm mt-2 px-3 py-2 rounded-0 text-white"
+                            style="background-color:#E4492E;">
+                            More info
+                        </button>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-12 position-relative">
-                    <img src="./images/img-2.jpeg" class="img-fluid" />
 
-                    <div class="position-absolute bottom-0 start-0 w-50 px-5 py-4">
-                        <h4 class="text-white m-0">Turning</h4>
-                        <button class="btn btn-light btn-sm mt-2 px-3 py-2 rounded-0">More info</button>
+                <div class="col-12 col-md-4 position-relative">
+                    <div class="ratio ratio-4x3">
+                        <img src="./images/product-2.jpg" class="zoom-img w-100 h-100 object-fit-cover">
+                    </div>
+
+                    <div class="position-absolute bottom-0 start-0 p-4">
+                        <h4 class="text-white m-0">Milling</h4>
+                        <button class="btn btn-sm mt-2 px-3 py-2 rounded-0 text-white"
+                            style="background-color:#E4492E;">
+                            More info
+                        </button>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-12 position-relative">
-                    <img src="./images/img-2.jpeg" class="img-fluid" />
 
-                    <div class="position-absolute bottom-0 start-0 w-50 px-5 py-4">
-                        <h4 class="text-white m-0">Turning</h4>
-                        <button class="btn btn-light btn-sm mt-2 px-3 py-2 rounded-0">More info</button>
+                <div class="col-12 col-md-4 position-relative">
+                    <div class="ratio ratio-4x3">
+                        <img src="./images/product-3.jpg" class="zoom-img w-100 h-100 object-fit-cover">
+                    </div>
+
+                    <div class="position-absolute bottom-0 start-0 p-4">
+                        <h4 class="text-white m-0">Drilling</h4>
+                        <button class="btn btn-sm mt-2 px-3 py-2 rounded-0 text-white"
+                            style="background-color:#E4492E;">
+                            More info
+                        </button>
                     </div>
                 </div>
-            </div>
-            <!-- 2nd row -->
-            <div class="row mt-3  gap-3 gap-md-0">
-                <div class="col-sm-12 col-md-4 col-lg-4 col-12 position-relative">
-                    <img src="./images/img-2.jpeg" class="img-fluid" />
 
-                    <div class="position-absolute bottom-0 start-0 w-50 px-5 py-4">
-                        <h4 class="text-white m-0">Turning</h4>
-                        <button class="btn btn-light btn-sm mt-2 px-3 py-2 rounded-0">More info</button>
+                <!-- Row 2 -->
+                <div class="col-12 col-md-4 position-relative">
+                    <div class="ratio ratio-4x3">
+                        <img src="./images/product-4.jpg" class="w-100 zoom-img h-100 object-fit-cover">
+                    </div>
+
+                    <div class="position-absolute bottom-0 start-0 p-4">
+                        <h4 class="text-white m-0">Cutting Tools</h4>
+                        <button class="btn btn-sm mt-2 px-3 py-2 rounded-0 text-white"
+                            style="background-color:#E4492E;">
+                            More info
+                        </button>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-12 position-relative">
-                    <img src="./images/img-2.jpeg" class="img-fluid" />
 
-                    <div class="position-absolute bottom-0 start-0 w-50 px-5 py-4">
-                        <h4 class="text-white m-0">Turning</h4>
-                        <button class="btn btn-light btn-sm mt-2 px-3 py-2 rounded-0">More info</button>
+                <div class="col-12 col-md-4 position-relative">
+                    <div class="ratio ratio-4x3">
+                        <img src="./images/product-5.jpg" class="w-100 zoom-img h-100 object-fit-cover">
+                    </div>
+
+                    <div class="position-absolute bottom-0 start-0 p-4">
+                        <h4 class="text-white m-0">Grinding</h4>
+                        <button class="btn btn-sm mt-2 px-3 py-2 rounded-0 text-white"
+                            style="background-color:#E4492E;">
+                            More info
+                        </button>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 col-12 position-relative">
-                    <img src="./images/img-2.jpeg" class="img-fluid" />
 
-                    <div class="position-absolute bottom-0 start-0 w-50 px-5 py-4">
-                        <h4 class="text-white m-0">Turning</h4>
-                        <button class="btn btn-light btn-sm mt-2 px-3 py-2 rounded-0">More info</button>
+                <div class="col-12 col-md-4 position-relative">
+                    <div class="ratio ratio-4x3">
+                        <img src="./images/product-6.jpg" class="w-100 zoom-img h-100 object-fit-cover">
+                    </div>
+
+                    <div class="position-absolute bottom-0 start-0 p-4">
+                        <h4 class="text-white m-0">Accessories</h4>
+                        <button class="btn btn-sm mt-2 px-3 py-2 rounded-0 text-white"
+                            style="background-color:#E4492E;">
+                            More info
+                        </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Deals -->
-    <section class="deals">
-        <div class="container-fluid bg-body-tertiary py-4 mt-3">
-            <h1 class="fw-bold text-center h-50">Brands We Deal In</h1>
-            <div class="brands w-100 d-flex justify-content-around py-5">
-                <div class="rounded-circle border border-black d-flex justify-content-center align-items-center"
-                    style="width: 45px; height: 45px;">
+    <section class="deals py-5">
+        <div class="container-fluid bg-body-tertiary text-center py-5">
+            <h1 class="fw-bold mb-4">Brands We Deal In</h1>
+
+            <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+
+                <button class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center"
+                    style="width:45px; height:45px;">
                     <i class="bi bi-chevron-left"></i>
-                </div>
-                <img src="./images/brand.jpeg" style="width: 200px;" />
-                <img src="./images/brand.jpeg" style="width: 200px;" class="d-none d-md-block" />
-                <img src="./images/brand.jpeg" style="width: 200px;" class="d-none d-md-block" />
-                <img src="./images/brand.jpeg" style="width: 200px;" class="d-none d-md-block" />
-                <div class="rounded-circle border border-black d-flex justify-content-center align-items-center"
-                    style="width: 45px; height: 45px;">
+                </button>
+
+                <img src="./images/Deal-1.png" class="brand-img mx-md-5 zoom-img">
+                <img src="./images/Deal-2.png" class="brand-img mx-md-5 zoom-img d-none d-md-block">
+                <img src="./images/deal-3.png" class="brand-img mx-md-5 zoom-img d-none d-md-block">
+                <img src="./images/deal-4.png" class="brand-img mx-md-5 zoom-img d-none d-md-block">
+
+                <button class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center"
+                    style="width:45px; height:45px;">
                     <i class="bi bi-chevron-right"></i>
-                </div>
+                </button>
+
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row">
-                <div
-                    class="left-div-deal col-sm-12 col-md-6 col-lg-6 col-12 d-flex flex-column py-5 ps-2 ps-sm-2 ps-md-5 pe-2 pe-sm-2 pe-md-5">
+            <div class="row d-flex justify-content-between">
+                <div class="left-div-deal col-sm-12 col-md-6 col-lg-6 col-12 d-flex flex-column py-5">
                     <p class="text-secondary">WHY CHOOSE US</p>
-                    <hr style="width: 150px;" />
+                    <hr style="width: 120px; color: red;" />
                     <h1>Because experience isn't claimed - it's earned</h1>
                     <p>Onethose defining moments a moment when our nation is at we our economy turmoil.</p>
                     <button type="button" class="btn btn-danger text-center w-50 rounded-0">
                         MORE DETAILS
                     </button>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 col-12 border-start">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 border">
                     <div class="border-bottom">
                         <p class="p-2" style="font-size: 3vw;">DELIVER ON TIME & ON BUDGET</p>
                     </div>
@@ -403,17 +474,30 @@
                 </div>
             </div>
         </div>
-        <div class="deal-image container-fluid mt-3 position-relative h-50">
-            <img src="./images/deal-img.jpeg" class="img-fluid" />
-            <div
-                class="position-absolute top-0 top-md-50 start-0 ms-2 ms-md-5 mt-5 p-1 p-md-5 text-white text-center text-md-start w-100">
-                <p>One Name Industries Trust - Bombay Tools Centre.
-                    30 Years of Precision.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint facere voluptate rem ipsa excepturi
-                    saepe natus.</p>
-                <button type="button" class="btn btn-danger rounded-0">MORE DETAILS</button>
+        <div class="container-fluid p-0 position-relative">
+            <img src="./images/deal-img-updated.jpeg" class="img-fluid w-100 zoom-img" />
+
+            <div class="position-absolute top-50 start-0 translate-middle-y d-none d-md-block text-white w-100">
+                <div class="" style="margin-left: 500px;">
+                    <p class="small text-uppercase mb-1">Produce The Best</p>
+                    <hr style="width: 150px; color: red;" />
+
+                    <h1 class="fw-bold display-5">Satisfaction is Our Motto</h1>
+
+                    <hr class="w-50" />
+                    <p class="mt-3" style="max-width: 450px;">
+                        Facilis facere excepturi provident amet adipisci pariatur, quaerat
+                        velit tempore exercitationem asperiores.
+                    </p>
+
+                    <button type="button" class="btn btn-light text-dark fw-medium rounded-0 px-4 py-2"
+                        style="margin-left: 400px;">
+                        MORE DETAILS
+                    </button>
+                </div>
             </div>
         </div>
+
     </section>
 
     <!-- work -->
@@ -424,21 +508,23 @@
                 <hr class="w-25 mx-auto" />
                 <h1 class="fw-bold">HOW WE WORK</h1>
             </div>
-            <div class="work-steps row">
+            <div class="work-steps row d-flex">
                 <div class="left-div col-sm-12 col-md-6 col-lg-6 col-12 position-relative">
-                    <img src="./images/img-1.jpeg" />
-                    <div class="card position-absolute rounded-0 d-none d-md-block" style="width: 20rem; top: 12rem; left: 25rem; z-index: 10;">
+                    <img src="./images/work-img.jpg" class="zoom-img" />
+                    <div class="card position-absolute rounded-0 d-none d-md-block"
+                        style="width: 20rem; top: 10rem; left: 20rem; z-index: 10;">
                         <div class="card-body bg-body-tertiary">
-                            <h5 class="card-title">Step 1</h5>
+                            <h5 class="card-title text-secondary fw-light fs-5">Step 1</h5>
                             <h5 class="card-title">We Listen First</h5>
-                            <hr class="bg-body-tertiary"/>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <hr class="text-secondary" />
+                            <p class="card-text text-secondary fw-light" style="font-size:medium;">Some quick example
+                                text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="">Go somewhere</a>
+                            <a href="#" class="text-decoration-none text-black fw-bold">REQUEST YOUR QUOTE</a>
                         </div>
                     </div>
                 </div>
-                <div class="right-div col-sm-12 col-md-6 col-lg-6 col-12">
+                <div class="right-div col-12 col-md-6">
                     <div class="process-steps bg-body-tertiary d-flex border">
                         <div class="step active border-end">
                             <p class="number">01</p>
@@ -473,39 +559,51 @@
                 </div>
             </div>
         </div>
-        <div class="bg-body-tertiary" style="width: 100%;">
-            <div class="cline-says" style="padding: 100px;">
-                <div class="d-flex row">
-                    <div class="border-end col-sm-12 col-md-6 col-lg-6 col-12">
-                        <p>CLIENT SAYS</p>
-                        <h1>Happy Customers</h1>
-                        <div class="pt-4">
-                            <i class="bi bi-star-fill" style="color: gold;"></i>
-                            <i class="bi bi-star-fill" style="color: gold;"></i>
-                            <i class="bi bi-star-fill" style="color: gold;"></i>
-                            <i class="bi bi-star-fill" style="color: gold;"></i>
-                            <i class="bi bi-star-fill" style="color: gold;"></i>
+        <div class="bg-body-tertiary py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-5 col-sm-12 text-center mb-4 mb-md-0">
+                        <img src="./images/happy-customer-img.png" class="img-fluid zoom-img" style="max-width: 320px;" />
+                    </div>
+
+                    <div class="col-lg-8 col-md-7 col-sm-12">
+                        <div class="border-bottom pb-4 mb-4">
+                            <p class="text-uppercase small text-secondary mb-1">Client Says</p>
+                            <h2 class="fw-bold">Happy Customers</h2>
+
+                            <div class="pt-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
                         </div>
+
+                        <p class="text-secondary mb-4">
+                            Donec volutpat ligula nec ipsum ultricies fringilla. Quisque vitae est turpis.
+                            Nulla sodales convallis mi, quis semper ante lacinia sit amet. Maecenas porta
+                            velit a justo commodo mattis at et magna.
+                        </p>
+
+                        <p class="fs-5 fw-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore temporibus
+                            deleniti aliquam adipisci aliquid quod.
+                        </p>
+
+                        <hr class="my-4 text-warning">
+
+                        <div class="d-flex align-items-center">
+                            <img src="./images/heroin.jpg" style="width: 75px; height: 75px; border-radius: 50%;" />
+
+                            <div class="ms-3">
+                                <h5 class="mb-0">Ruchika Dubey</h5>
+                                <p class="text-secondary small fw-semibold mb-0">Entrepreneur</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="px-md-5 px-sm-1 col-sm-12 col-md-6 col-lg-6 col-12">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi earum maxime magni. Distinctio
-                            sint deserunt doloribus deleniti aperiam minus eum, esse hic adipisci nam architecto? Quia,
-                            fugiat! Libero, recusandae laboriosam.</p>
-                    </div>
-                </div>
-                <div class="pt-3">
-                    <p class="fs-md-3 fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tempore temporibus
-                        deleniti aliquam adipisci aliquid quod,</p>
-                </div>
-                <hr class="mt-5" style="color: gold;" />
-                <div class="d-flex">
-                    <div class="mt-2">
-                        <img src="./images/img-3.jpeg" style="width: 80px; height: 80px; border-radius: 50%;" />
-                    </div>
-                    <div class="px-4 mt-2">
-                        <h4>Ruchika Dubey</h4>
-                        <p class="fw-medium">ENTREPRENEUR</p>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -513,9 +611,9 @@
         <!-- Questions -->
         <div class="px-5 mt-2 row">
             <div class="left col-sm-12 col-md-6 col-lg-6 col-12 p-sm-3 p-md-5">
-                <img src="./images/img-2.jpeg" class="img-fluid rounded-5"/>
+                <img src="./images/ques-img.jpg" class="img-fluid rounded-5 zoom-img" style="height: 80vh;" />
             </div>
-            <div class="left col-sm-12 col-md-6 col-lg-6 col-12 p-5">
+            <div class="left col-md-6 p-5">
                 <div class="accordion" id="accordionExample">
                     <p style="font-weight: bolder; font-size: 2.5rem;">Frequently Asked Questions</p>
                     <div class="accordion-item">
@@ -606,35 +704,44 @@
             </div>
             <div class="pt-5 row gap-3 gap-md-0">
                 <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-                    <div class="card">
-                        <img src="./images/img-1.jpeg" class="card-img-top" alt="...">
+                    <div class="card zoom-img">
+                        <img src="./images/blog-1-img.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <p class="card-title fs-6">MARCH 28, 2026</p>
+                            <h5 class="card-title">Tips To Troubleshooting Common Plumbing Issues</h5>
+                            <p class="card-text" style="font-size: small;">Some quick example text to build on the card
+                                title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary rounded-5">Read More</a>
+                            <a href="#" class="btn rounded-5 text-white" style="background-color: #E4492E;">Read
+                                More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-                    <div class="card">
-                        <img src="./images/img-2.jpeg" class="card-img-top" alt="...">
+                    <div class="card zoom-img">
+                        <img src="./images/blog-2-img.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <h5 class="card-title fs-6">MARCH 28, 2026</h5>
+                            <h5 class="card-title">Tips To Troubleshooting Common Plumbing Issues</h5>
+                            <p class="card-text" style="font-size: small;">Some quick example text to build on the card
+                                title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary rounded-5">Read More</a>
+                            <a href="#" class="btn rounded-5 text-white" style="background-color: #E4492E;">Read
+                                More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-12">
-                    <div class="card">
-                        <img src="./images/img-1.jpeg" class="card-img-top" alt="...">
+                    <div class="card zoom-img">
+                        <img src="./images/blog-3-img.jpg" class="card-img-top zoom-img" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            <h5 class="card-title fs-6">MARCH 28, 2026</h5>
+                            <h5 class="card-title">Tips To Troubleshooting Common Plumbing Issues</h5>
+                            <p class="card-text" style="font-size: small;">Some quick example text to build on the card
+                                title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary rounded-5">Read More</a>
+                            <a href="#" class="btn rounded-5 text-white" style="background-color: #E4492E;">Read
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -648,7 +755,7 @@
             <div class="row">
 
                 <div class="col-md-3 mb-4">
-                    <img src="./images/brand.jpeg" alt="logo" width="80" class="mb-3">
+                    <img src="./images/logo.png" alt="logo" width="80" class="mb-3">
 
                     <p>
                         Going forward, a new normal that has evolved from generation is on
@@ -713,7 +820,10 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
